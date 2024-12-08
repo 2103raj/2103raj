@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       body{
+       margin:0px;
+       background-image:url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg);
+
+
+       }
+       /* main div styling*/
+       div{
+       width:400px;
+       height:100%;
+       max-width:100%;
+       background-color:lightgrey;
+       justify-content:center;
+       margin-left:600px;
+      margin-top:0px;
+       padding:20px;
+       border:2px solid black;
+       border-radius:10px;
+        box-shadow: 5px 10px 5px lightblue;
+        }
+       label{
+       margin:10px;
+       display:block;
+       font-size:17px;
+       text-transform:capitalize;
+       padding-left:20px;
+       width:40%;
+       color:#00f;
+       }
+
+       /* input field styling*/
+       input{
+       margin:5px;
+       display:block;
+       height:25px;
+       width:75%;
+       padding-left:20px;
+       border:2px solid ;
+       margin-left:20px;
+       border-radius:5px;
+       }
+        /* submit button css*/
+       #submit{
+       margin-top:10px;
+       margin-left:30%;
+       width:110px;
+       justify-content:center;
+       padding:0px;
+       height:40px;
+       border-radius:20px;
+       }
+       #submit:hover{
+       background-color:lightblue;
+       font-color:#fff;
+       font-size:10px;
+
+
+       }
+
+       #submit:active{
+       background-color:red;}
+       form{
+       padding-left:10px;
+       align-items:center;
+       }
+       h1{
+       text-align:center;
+       }
+       input[type=text]:hover{
+       background-color:#ffc400;
+       }
+       input[type=password]:hover{
+       background-color:#33c500;
+       }
+
+
+     /* container for radio*/
+       .container{
+       width:100px;
+       position:relative;
+       display:flex;
+      margin-left:-10px;
+       }
+       . input1{
+       width:500px
+       height:0px;
+
+       }
+       @media screen and (max-width>100%;){
+            width:50%;
+            max-width:100%;
+
+       }
+       .marquee{
+       width:400px;
+       margin-left:595px;
+       height:10px;
+       margin-top:100px;
+       background-color:#9ef3ff;
+       box-shadow:none;
+       font-size:25px;
+       align-items: center
+       scrolldelay:100s;
+       }
+       .marquee:hover{
+             animation-play-state: paused;
+        }
+
+
+
+
+
+       </style>
+</head>
+<body id="log">
+<div class="marquee"><marquee >enter your login details</marquee></div>
+
+<div>
+    <h1>login</h1>
+    <form>
+        <label>enter your name</label>
+
+        <input type="text" max="10" placeholder="enter your name" required>
+        <label>enter your password</label>
+        <input type="number" placeholder="enter your age " >
+        <label>enter your secret key</label>
+        <input type="password" maxlength="4" size="4"  placeholder="enter your password " required>
+        <label class="container">
+            <input type="radio" class="input1" required><span class="p">remeber me</span>
+        </label>
+
+        <input type="submit" value="login"  id="submit">
+
+</form>
+
+
+
+</div>
+</body>
+</html>

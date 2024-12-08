@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       body{
+       margin:0px;
+       }
+       div{
+       width:700px;
+       height:20%;
+       max-width:100%;
+       background-color:lightgrey;
+       justify-content:center;
+       margin-left:500px;
+       margin-top:10px;
+       padding:20px;
+       border:2px solid black;
+       border-radius:10px;
+        box-shadow: 5px 10px 5px black;
+}
+       }
+       label{
+       margin:10px;
+       display:block;
+       font-size:17px;
+       text-transform:capitalize;
+       padding-left:10px;
+       width:40%;
+       color:#00f;
+       }
+       input{
+       margin:10px;
+       display:block;
+       height:25px;
+       width:75%;
+       border:2px solid ;
+       margin-left:20px;
+       border-radius:5px;
+       }
+       #file{
+       width:200px;
+       margin-left:30px;
+       background-color:white;
+       }
+       #submit{
+       border-radius:25px;
+       align-items:center;
+       width:200px;
+       margin-left:20%;
+       height:48px;
+       margin-top:50px;
+       }
+       input[type=text]:hover{
+       background-color:#2f9;
+
+       }
+       input::placeholder{
+       color:lightblue;
+       font-size:15px;
+       }
+       textarea{
+       margin-left:30px;
+       border-radius:5px;
+       height:100px;
+       width:400px;
+       margin-top:0px;
+       max-width: 90%;
+}
+       #login{
+       border-radius:25px;
+       align-items:center;
+       margin-left:400px;
+       margin-top:-59px;
+       border:2px solid ;
+       background-color:white;
+       padding:13px 30px 13px 30px;
+       display:block;
+       width:100px;
+       text-align:center;
+       }
+       #login:hover{
+       background-color:lightblue;
+       }
+        #login:active{
+       background-color:lightgreen;
+       }
+
+        #com{
+       margin-bottom:10px;
+       display:block;
+       }
+
+
+
+
+   </style>
+</head>
+<body>
+
+<div>
+    <form>
+        <label>this is text input</label>
+
+        <input type="text" max="10" placeholder="enter your name" required>
+        <label>this is age input</label>
+        <input type="number" placeholder="enter your age " >
+        <label>this is password input</label>
+        <input type="password" maxlength="4"   size="4"  placeholder="enter your password " required>
+        <label>this is date  input</label>
+        <input type="date">
+        <label>this is  phone input</label>
+        <input type="tel">
+        <label>this is file  input</label>
+        <input type="file" name="file" id="file" multiple>
+        <label>this is mail  input</label>
+        <input type="email">
+        <label>datalist</label>
+        <input list="browsers" name="browser" >
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <label id="com">leave your comment</label>
+        <textarea placeholder="enter your comment">
+        </textarea>
+        <input type="submit" value="Submit" id="submit">
+        <a type="submit"  id="login" href="login.html" >login</a>
+
+
+</form>
+
+
+
+</div>
+</body>
+</html>
