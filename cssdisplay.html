@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        *{
+        margin:0px;
+        font-family:arial,times new roman;
+        color:#000;
+
+        }
+        body{
+        overflow-x:hidden;
+        }
+         #div{
+        display:row-flex;
+        background-color:white;
+        overflow:hidden;
+
+        }
+
+       @media screen and (max-width>1000px) {
+            .div1{max-width:500px;}
+            .div5{max-width:1000px;
+                margin-left:0px;}
+
+            .div6{max-width:90%; margin-left:0px;}
+            .div2{max-width:90%}
+            .p{max-width:100%;
+            margin-left:0px;
+            }
+            .sec3{max-width:600px;
+             overflow-y:scroll;}
+             .flex{ max-width:100%;
+             max-height:100%;}
+              #col-2{max-width:100%;}
+        }
+        .div1{
+        height:1000px;
+        background-color:lightgrey;
+        display:row-flex;
+        overflow:hidden;
+        max-width:100%;
+        }
+        .div2{
+        height:600px;
+        background-color:lightblue;
+        margin:10px 0 10px 0;
+
+        }
+        .flex{
+         display:flex;
+         height:470px;
+         margin-left:100px;
+       }
+        .div3{
+        height:600px;
+        background-color:lightgreen;
+        margin:10px 0 10px 0;
+        }
+        table,th,td{
+        width:500px;
+        height:50px;
+        border:2px solid blue;
+        border-radius: 10px;
+        margin-top:80px;
+        max-width:90%;
+        }
+        table:hover{
+        background-color:lightblue;
+        transition:2s;
+        }
+        td:hover{
+        background-color:red;
+
+        }
+        tr:hover{
+        background-color:#f5e3f3;
+        }
+
+        .div5{
+        width:500px;
+        padding:20px;
+        BACKGROUND-COLOR:LIGHTGREY;
+        margin-left:200px;
+        max-width:100%;
+
+        }
+        .div6{
+        width:500px;
+        padding:20px;
+        BACKGROUND-COLOR:LIGHTGREY;
+        margin-left:500px;
+
+        }
+        .tabl{
+        width:500px;
+        height:300px:
+        border:2px;
+        border-style:solid;
+        border-color:blue;
+        border-collapse:collapse;
+        border-bottom:dotted;
+        border-radius: 10px;
+        }
+        .td{
+        text-align:center;
+        padding:10px;
+        font-size:25px;
+        font-weight:bold;
+        font-family:arial;
+        }
+        .p{
+        background-color:lightgrey;
+        display:inline-flex;
+        margin-top:60px;
+        width:100%;
+        height:400px;
+        max-width:100%;
+        }
+        .head{
+        text-align:center;
+        font-family:Bahnschrift SemiBold Condensed;
+        height:70px;
+        padding:17px;
+        background-color:lightgrey;
+        font-size:30px;
+        border:2px dotted lightblue;
+        border-radius:10px;
+        }
+        .p1{
+        font-size:20px;
+        font-family:times new roman;
+        margin-top:30px;
+        height:300px;
+        background-color:lightgrey;
+        text-align:left;
+        width:800px;
+        margin-left:500px;
+        margin-top:40px;
+        font-size:30px;
+        border-radius:20px;
+        padding:40px;
+        }
+        .A1{
+         height:500px;
+         background-color:lightgrey;
+         display:block;
+         }
+        .p1:hover{
+        background-color:lightblue;
+        }
+
+        /* html block css */
+
+        .hed{
+        height:50px;
+        text-align:center;
+        justify-content:center;
+        font-family:italic;
+        text-transform:uppercase;
+        padding-top:15px;
+        background-color:lightblue;
+        }
+        .par>h1,h2,h3,h4,h5{
+        width:400px;
+        padding-left:20px;
+        margin-top:50px;
+        }
+        .par>marquee{
+        width:200px;
+        margin-top:20px;
+       }
+        .bold>p{
+        width:580px;
+        padding-left:20px;
+        font-size:23px;
+        font-family:cursive;
+
+        }
+        .bold>h3{
+         text-transform:uppercase;
+         text-decoration:underline;
+         text-align:center;
+         font-size:25px;
+         width:300px;
+         margin-left:70px;
+         padding-bottom:10px;
+         margin-top:25px;
+        }
+
+
+        /* ancor*/
+
+        .ancor>p{
+        width:600px;
+        font-size:25px;
+        font-family:times nwe roman;
+        margin:10px;
+        }
+        .ancor>h1{
+        margin-left:100px;
+        padding-top:20px
+        }
+        .ancor>ul>li>a{
+        color:blue;
+        font-size:20px;
+        padding-left:0px;
+        text-decoration:none;
+        line-height:2;
+        }
+        /*a.one:hover{
+        color:red;
+        transition:2s;*/
+        }
+       .one:active{
+        color:green;
+        }
+        .one:hover {
+        color:red;
+        font-size:40px;
+        }
+        .two:active{
+        color:green;
+        }
+        .two:hover{
+        background-color:yellow;
+        }
+        .three:active{
+        color:#000;
+        font-size:30px;
+        }
+        .three:hover{
+        background-color:green;
+        color:#fff;
+        }
+        .four:link{
+        color:#fff;
+        }
+
+        .sec3{
+        border-radius:15px;
+        background-color:grey;
+        height:900px;
+        }
+        #col-2>p{
+        width:1800px;
+        height:300px;
+        margin-left:10px;
+        font-size:25px;
+        line-height:2;
+        padding-left:40px;
+        font-style:italic;
+        max-width:90%;
+        }
+
+        #col-2>h3{
+        height:50px;
+        width:950px;
+        text-align:start;
+        font-size:27px;
+        margin-left:30px;
+        text-decoration:underline white;
+        }
+        #col-2>>h1{
+        text-align:center;
+        /*margin-left:500p;*/
+        margin-top:0px;
+        padding-top:20px;
+        text-transform:uppercase;
+        font-weight:bold;
+        font-style:italic;
+        }
+        header{
+        position:static;
+        width:100%;
+        height:100px;
+        background-color:#001;
+        display: inline-block;
+        margin:0px;
+        }
+        .tip{
+        color:#fff;
+        background-color:grey;
+        margin:-3px;
+        height:90px;
+
+        }
+        .a1{
+        color:#fff;
+        margin-left:100px;
+        padding:16px 15px 20px;
+        margin-top:20px;
+        display :inline-flex;
+        font-size:10px;
+        border-radius:15px;
+        height:20px;
+        width:100px;
+        text-align:center;
+        font-size:25px;
+         font-weight:bold;
+
+        }
+        .a2{
+        color:#fff;
+        margin-left:1000px;
+        margin-top:-13px;
+        display :inline-flex;
+        font-size:25px;
+        font-weight:bold;
+        border-radius:15px;
+        height:10px;
+        margin-bottom:20px;
+        padding:20px;
+        height:20px;
+        justify-content:center;
+        }
+        .a1:hover{
+        background-color:#f72;
+        }
+        .a2:hover{
+        background-color:#f72;
+        }
+
+
+    </style>
+</head>
+<header>
+
+</header>
+
+<body>
+ <div class="tip">
+        <a class="a1" href="#section1">section</a>
+        <a class="a1" href="#section3">section2</a>
+        <a class="a1" href="#section3">section2</a>
+        <a class="a2">home</a>
+ </div>
+<div id="div">
+    <div class="div1" id="section1">
+        <div class="A1" >
+            <div class="head"><h1 >This is the div section consists of tables design</h1></div>
+            <div class="p1"> <p> Here there are  two tables consists ,where is use table attributes
+                and tags for creating them </p>
+                <p>I apply CSS style for also like table border and hover color
+             (this para graph  is designed with css attributes with font fontfamily and  size and alignment)
+            </p>
+            </div>
+        </div>
+        <div class="p">
+            <div class="div5">
+                <table>
+                    <tr class="td">
+                        <th>name</th>
+                        <th>age</th>
+                        <th>class</th>
+                        <th>phone No.</th>
+                    </tr>
+                    <tr>
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div6">
+                <table class="tabl">
+                    <tr>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>class</th>
+                        <th>phone No.</th>
+                    </tr>
+                    <tr class="td">
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr class="td">
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr class="td">
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr class="td">
+                        <td>jhon</td>
+                        <td>12</td>
+                        <td>10th</td>
+                        <td>1234567</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="div2" id="section2">
+        <div>
+            <div class="hed"><h1>this is html block</h1></div>
+            <div class="hed">hello</div>
+        </div >
+        <div class="flex">
+            <div class="par">
+                <marquee><h1>this is h1 heading</h1></marquee>
+                <h2>This is h2 heading</h2>
+                <h3>This is h3 heading</h3>
+                <h4>this is h4 heading</h4>
+                <h5>This is h5 heading</h5>
+
+            </div>
+            <div class="bold">
+                <h3>this is paragraph</h3>
+            <p>Technology is the driving force behind modern innovation, shaping how we communicate, work, and live. From artificial intelligence and cloud computing to renewable energy and advanced medical devices, technology enhances efficiency and expands human potential. It connects people globally, empowers industries to solve complex challenges, and provides tools to improve everyday life. As it evolves, technology continues to push boundaries, offering solutions to pressing problems while raising new ethical and societal considerations.</p>
+            </div>
+            <div class='ancor'>
+                <h1>Anchor tags</h1>
+                <p><a>The anchor tag (<a>) in HTML is a fundamental element used to create hyperlinks, allowing users to navigate to other web pages, files, email addresses, or specific sections within a page. It serves as a bridge connecting different parts of the web or resources. The key attribute of the <a> tag is href, which specifies the destination URL or reference point.</p>
+                <ul>
+                    <li><a href="https://www.google.com/" class="one"  target="_blank">click for directing to google page</a></li>
+                    <li><a href="https://www.instagram.com/" class="two" target=_parent>click on link for  redirecting to instagram page</a></li>
+                    <li><a href="https://www.facebook.com" class="three">click on link for redirecting to facebook page</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/" class="four">click for redirecting to geeks for geeks page</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sec3" id="section3">
+       <div id="col-2" >
+            <h1>this is html block</h1>
+            <h3>The Moment of Greatness: Abraham Lincoln's Gettysburg Address</h3>
+            <p>In November 1863, during the height of the American Civil War, President Abraham Lincoln faced a divided nation. Despite immense pressure, he was invited to deliver remarks at the dedication of a cemetery in Gettysburg, Pennsylvania—a site of one of the war's bloodiest battles.
+                Lincoln’s speech, only 272 words long, profoundly moved the audience and redefined the purpose of the war. He reminded the nation of its founding ideals: liberty, equality, and democracy. His words, "government of the people, by the people, for the people, shall not perish from the earth," echoed as a powerful commitment to unity and freedom.
+                This brief yet transformative moment demonstrated Lincoln's ability to inspire hope and vision during a time of immense despair. It became a turning point, not only in his leadership but in America's history, reminding everyone that even in the darkest times, great words and steadfast resolve can light the way forward.</p>
+            <h3>The Apple Moment: Steve Jobs' Return to Apple</h3>
+            <p>In 1997, Apple Inc. was on the brink of bankruptcy. The company had struggled for years after Steve Jobs, its co-founder, was ousted in 1985. When Jobs returned as interim CEO, Apple was riddled with inefficient product lines and a lack of clear direction.
+                In a pivotal board meeting, Jobs famously simplified Apple’s strategy with a single chart: a grid dividing consumer and professional markets, with a focus on just four core products. This radical shift in focus allowed the company to innovate without distraction.
+                Shortly after, in 1998, Apple launched the iMac—a bold, colorful, and user-friendly product that signaled the company’s revival. Jobs not only brought Apple back from the edge but laid the foundation for iconic products like the iPod, iPhone, and iPad, redefining technology and culture.
+                This moment showcased Jobs' visionary leadership and his ability to turn adversity into opportunity, transforming Apple into one of the most valuable companies in the world.
+            </p>
+       </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
